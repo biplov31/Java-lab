@@ -1,0 +1,6 @@
+when a class is static, we don't need to create an object to access it
+
+Trying to read string after integer causes error because Enter character stays in the buffer
+
+classpath
+(location).; mysql.connector.jar;

@@ -1,0 +1,5 @@
+AWT - Abstract Windowing Tolkit -> Heavyweight
+Swing - extended version of awt that is lightweight
+
+Component - Swing -> javax.swing.*;
+Action/Event - awt -> java.awt.x; java.awt.event.*;

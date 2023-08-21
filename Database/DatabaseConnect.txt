@@ -1,0 +1,23 @@
+Steps to connect JDBC (Java Database Connectivity)
+
+1. import packages
+2. load/register drive
+3. create connection
+4. create statement
+5. execute statement
+6. close connection
+
+Create:
+Insert into <table_name> (field/column, col2, col3) values (val1, val2, val3);  // '' single quotes should be used for alphanumeric values
+
+Read:
+Select * from <table_name>;
+Eg-
+String selectQuery = "Select * from account";
+ResultSet rs = stat.executeQuery(selectQuery)
+while(rs.next()){
+	String fn = rs.getString("full-name");
+	sout(fn)
+}
+
+

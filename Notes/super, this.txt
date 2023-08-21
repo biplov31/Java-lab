@@ -1,0 +1,65 @@
+1. 'super' is used to call the parent class's constructor:
+
+class Parent {
+    Parent() {
+        System.out.println("Parent class constructor called.");
+    }
+}
+
+class Child extends Parent {
+    Child() {
+        super();
+        System.out.println("Child class constructor called.");
+    }
+}
+
+2. 'super' is used to access the parent class's variables and methods:
+
+class Parent {
+    protected int x = 10;
+    void print() {
+        System.out.println("Parent class print method called.");
+    }
+}
+
+class Child extends Parent {
+    int x = 20;
+    void print() {
+        System.out.println("Child class print method called.");
+    }
+    void display() {
+        System.out.println("x in child class: " + x);
+        System.out.println("x in parent class: " + super.x);
+        print();
+        super.print();
+    }
+}
+
+
+1. 'this' is used to refer to the current object:
+
+class Person {
+    String name;
+    int age;
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+2. 'this' can also be used to invoke another constructor of the same class:
+
+class Person {
+    String name;
+    int age;
+    Person(String name) {
+        this(name, 0);
+    }
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+
+

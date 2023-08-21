@@ -1,0 +1,10 @@
+Student s = new Student(); // s is an object, Student is the data type
+String name = "Radha";  // name is an object, String is the data type
+name = new String("Radha2"); // since string is immutable, both "Radha" and "Radha2" are created in the memory. There is no replacement.
+
+int a = 5;
+a = 6;
+a++ // a = 7 since integer is mutable
+
+instances like s, name are stored in the heap memory. 
+variable declarations are stored in stack memory.
